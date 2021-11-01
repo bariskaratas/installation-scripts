@@ -1,0 +1,8 @@
+# install Octopus tentacles
+sudo apt-key adv --fetch-keys https://apt.octopus.com/public.key
+sudo add-apt-repository "deb https://apt.octopus.com/ stretch main"
+sudo apt-get update
+sudo apt-get install tentacle
+
+# setup tentacles
+/opt/octopus/tentacle/configure-tentacle.sh
